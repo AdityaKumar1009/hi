@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: #dfe8e6;
+            color: #000;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+            font-size: 1.1rem;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px 15px;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+
+        .navbar a:hover {
+            color: #0077b6;
+            transform: scale(1.1);
+        }
+
+        #profile {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .section__text__p3 {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        p1 {
+            color: #000;
+            font-weight: bold;
+        }
+        p2 {
+            color: #ff671f;
+            font-weight: bold;
+        }
+        p3 {
+            color: #046a38;
+            font-weight: bold;
+        }
+        p4 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        #socials-container {
+            margin-top: 20px;
+        }
+        .icon {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .icon:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+            box-shadow:  rgba(102, 140, 255, 0.4) 5px 5px, rgba(102, 140, 255, 0.3) 8px 8px, rgba(102, 140, 255, 0.2) 11px 11px;
+        }
+
+        .navbar2 {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            display: flex;
+            gap: 25px;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+            box-shadow: rgba(102, 140, 255, 0.4) 5px 5px, rgba(102, 140, 255, 0.3) 10px 10px, rgba(102, 140, 255, 0.2) 15px 15px, rgba(102, 140, 255, 0.1) 20px 20px, rgba(102, 140, 255, 0.05) 25px 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="about.html">About</a>
+    </nav>
+    <nav class="navbar2"></nav>
+        <a href="ind.html" class="btn">Home</a>
+    </nav>
+
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p3">
+                Hello !! I'm <p1>Aditya</p1>, an <p1>Aspiring ML Engineer</p1> from <p2>In</p2><p4>d</p4><p3>ia </p3> with a keen interest in understanding how technology works and how it can automate processes to solve problems, making our lives easier. My journey into technology began with a fascination for how computers function and their potential to create impactful solutions.
+            </p>
+            
+            <p class="section__text__p3">
+                With a strong foundation in <p1>Python</p1>, <p1>Java</p1>, and <p1>Swift</p1>, I have explored diverse areas of technology, including <p1>Machine Learning</p1>, <p1>Computer Vision</p1>, <p1>Generative AI</p1>, <p1>iOS Development</p1>, and <p1>Cloud Computing</p1>. I enjoy working with tools like <p1>SwiftUI</p1>, <p1>Xcode</p1>, and <p1>AWS</p1>, leveraging them to deploy scalable systems, host live applications, and push the boundaries of innovation.
+            </p>
+            
+            <p class="section__text__p3">
+                Currently pursuing a <p1>B.Tech in Computer Science Engineering</p1>, I am eager to take my skills further and contribute to the tech industry with innovative ideas. I aspire to secure a <p1>Summer Internship in 2025</p1> to enhance my expertise and gain hands-on experience.
+            </p>
+            
+            <p class="section__text__p3">
+                When I'm not learning, you'll often find me exploring new advancements in technology, especially in automation and AI, brainstorming creative ideas, or even updating myself with some history and geopolitics.
+            </p>
+
+            <div id="socials-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://linkedin.com/'"
+                />
+                <img
+                    src="./assets/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/'"
+                />
+                <img
+                    src="./assets/instagram.png"
+                    alt="My Instagram profile"
+                    class="icon"
+                    onclick="location.href='https://instagram.com/'"
+                />
+                <img
+                    src="./assets/mail.png"
+                    alt="Email me"
+                    class="icon"
+                    onclick="location.href='mailto:adityakumarsinghczm1009@gmail.com'"
+                    title="Send me an email"
+                />
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
