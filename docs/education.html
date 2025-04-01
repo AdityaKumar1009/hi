@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            background-color: #dfe8e6;
+            color: #000;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            gap: 20px;
+            font-size: 1.1rem;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px 15px;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+
+        .navbar a:hover {
+            color: #0077b6;
+            transform: scale(1.1);
+        }
+
+        #education {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        .section__text__p1, .section__text__p2 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .education-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+        .degree, .duration {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .about-containers {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .details-container {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 12px;
+            width: 280px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.22s;
+        }
+        .details-container:hover {
+            transform: scale(1.05);
+            border-color: #6200ea;
+        }
+        .experience-sub-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .navbar2 {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            display: flex;
+            gap: 25px;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+            margin-top: 10px;
+            
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+            box-shadow: rgba(102, 140, 255, 0.4) 5px 5px, rgba(102, 140, 255, 0.3) 10px 10px, rgba(102, 140, 255, 0.2) 15px 15px, rgba(102, 140, 255, 0.1) 20px 20px, rgba(102, 140, 255, 0.05) 25px 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="about.html">About</a>
+    </nav>
+    <nav class="navbar2">
+        <a href="ind.html" class="btn">Home</a>
+    </nav>
+    <section id="education">
+        <p class="section__text__p1">Get To Know More About My</p>
+        <h1 class="title">Education</h1>
+        <div class="education-container">
+            <span class="degree">B.Tech in Computer Science Engineering at VIT-AP University</span>
+            <span class="duration">Sep 2022 - July 2026</span>
+        </div>
+        <p class="section__text__p2">CourseWork</p>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">AI / Data Science</h2>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Data Analytics</li>
+                        <li>Data Warehousing & Mining</li>
+                        <li>Data Visualisation</li>
+                        <li>Digital Image Processing</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Computer Science</h2>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Database Management System</li>
+                        <li>Operating Systems</li>
+                        <li>Computer Networks</li>
+                        <li>Automata Theory</li>
+                        <li>Software Engineering</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Amazon Web Services</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Mathematics</h2>
+                    <ul>
+                        <li>Probability</li>
+                        <li>Applied Statistics</li>
+                        <li>Linear Algebra</li>
+                        <li>Discrete Mathematics</li>
+                        <li>Differential Equations</li>
+                        <li>Vector Calculus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
