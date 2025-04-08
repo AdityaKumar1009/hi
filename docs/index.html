@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya</title>
+    <title>Aditya in Air</title>
     <style>
         body {
             font-family: monospace;
@@ -46,11 +46,12 @@
             text-align: left;
         }
 
-        .p3 {
+        p3 {
             font: monospace;
             font-size: 0.8rem;
             text-align: left;
-            padding: 1rem;
+            padding: 0.2rem;
+            line-height: 1.6;
         }
 
 
@@ -71,23 +72,22 @@
         #socials-container {
             margin-top: 20px;
             position: relative;
-            
-            display: flex;  /* Makes the images appear in one line */
-            align-items: center; /* Aligns them properly */
-            gap: 20px;  /* Adjust spacing between images */
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
         
         .icon2 {
-            width: 20px;  /* Adjust size if needed */
+            width: 20px;
             height: auto;
             cursor: pointer;
-            transition: 0.3s ease-in-out;
+            transition: 0.05s ease-in-out;
             padding-right: 10px;
             padding-bottom: 8px;
         }
 
         .icon2:hover {
-            box-shadow: rgba(225,225,225,1) 0px 2px;
+            box-shadow: rgba(225,225,225,1) 0px 2.5px;
         }
 
         .initials {
@@ -124,31 +124,155 @@
             margin: 2rem 0;
         }
 
-        p4 {
-            font: monospace;
-            padding-bottom: 20px;
-        }
-
-        p5 {
+        h4 {
             font: monospace;
             font-size: 0.8rem;
             text-align: left;
-            color:#e0e0e0;
+            padding: 0.2rem;
+            line-height: 1.6;
         }
 
-        p5:hover {
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
             box-shadow: rgba(225,225,225,1) 0px 2px;
+        }
+
+        .circles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .circles li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+        }
+
+        .circles li:nth-child(1) {
+            left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(2) {
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3) {
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4) {
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5) {
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6) {
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .circles li:nth-child(7) {
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .circles li:nth-child(8) {
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9) {
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10) {
+            left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100% {
+                transform: translateY(-120vh) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
     <div class="container">
         <h1>Aspiring ML Engineer.</h1>
-        <p>With a deep passion for AI and Computer Vision, I'm always exploring the intersection of technology and innovation. My foundation in deep learning and iOS development allows me to create impactful solutions, shaping the future of tech.</p>
+        <p>My passion lies at the intersection of AI and Computer Vision, where I'm constantly exploring new avenues for technological innovation. My background in deep learning and iOS development has equipped me to create impactful solutions, and I'm excited about the potential to shape the future of technology.</p>
 
-        <p>While I have gained solid expertise, I'm still on an exciting learning journey, constantly growing and refining my skills. Every project I undertake is a step forward in mastering the cutting-edge technologies that are transforming the world.</p>
+        <p>While I've developed a solid foundation, I view myself as a lifelong learner, continually refining my skills through each project I undertake.</p>
 
-        <p>I'm from <span style="color:#ff671f;"><b>In</b></span><span style="color:white;"><b>d</b></span><span style="color:#046a38;"><b>ia</b></span> and aim to pursue a Master's degree to further deepen my knowledge and contribute to groundbreaking advancements in AI.</p>
+        <p>Coming from <span style="color:#ff671f;"><b>In</b></span><span style="color:white;"><b>d</b></span><span style="color:#046a38;"><b>ia</b></span> I'm particularly motivated to pursue advanced studies in AI, with the aim of contributing to groundbreaking advancements in the field.</p>
 
         <div class="separator"></div>
 
@@ -156,7 +280,7 @@
             <p2><b>Skills</b></p2>
         </div>
 
-        <p3>Java | Python | Swift | C | JS | MySQL | AWS | Git</p3> </br> </br>
+        <p3>Java | Python | Swift | C | JS | MySQL | AWS | Git</p3> <br> <br>
         <p3>Tensorflow | Pytorch | OpenCV | FastAPI | Streamlit | Flask </p3>
 
         <div class="separator"></div>
@@ -165,7 +289,7 @@
             <p2><b>Education</b></p2>
         </div>
 
-        <p3>B.Tech in Computer Science Engineering at VIT-AP University ----> Sep 2022 - July 2026</p3> </br></br>
+        <p3>B.Tech in Computer Science Engineering at VIT-AP University ----> Sep 2022 - July 2026</p3> <br><br>
         <p3>- CGPA: 8.53/10</p3>
 
         <div class="separator"></div>
@@ -174,11 +298,16 @@
             <p2><b>Projects</b></p2> 
         </div>
 
-        <p5>-- Deepfake Detection</p5></br> </br>
-        <p5>-- Pedestrian Detection</p5></br> </br>
-        <p5>-- Movie Recommender</p5></br> </br>
-        <p5>-- Handwritten Digit Recognition</p5></br> </br>
-        <p5>-- Blood Diseases Diagnosis</p5></br>
+        <p3><a href="https://github.com/AdityaKumar1009/Deepfake-Detection-EfficientNet_b0" target="_blank">-- Deepfake Detection</a></p3><br>
+
+        <p3><a href="https://github.com/AdityaKumar1009/Pedestrian-Detection-from-Drone-View" target="_blank">-- Pedestrian Detection</a></p3><br>
+
+        <p3><a href="https://github.com/AdityaKumar1009/Recommendation-System" target="_blank">-- Movie Recommender</a></p3><br>
+
+        <p3><a href="https://github.com/AdityaKumar1009/Digit-Recognition" target="_blank">-- Handwritten Digit Recognition</a></p3><br>
+        
+        <p3><a href="" target="_blank">-- Blood Diseases Diagnosis</a></p3><br>
+
 
 
         <div class="separator"></div>
@@ -188,13 +317,13 @@
         </div>
 
         <p3><b>- AI/Data Science: </b></p3>
-        <p3>Deep Learning | Machine Learning | Artificial Intelligence | Data Warehousing & Mining | Data Analytics | Data Visualisation | Digital Image Processing</p3> </br></br>
+        <p3>Deep Learning | Machine Learning | Artificial Intelligence | Data Warehousing & Mining | Data Analytics | Data Visualisation | Digital Image Processing</p3> <br><br>
 
         <p3><b>- Computer Science: </b></p3>
-        <p3>Data Structures | Algorithms | Database Management System | Operating System | Computer Networks | Object-Oriented Programming | Software Engineering | Automata Theory</p3> </br></br>
+        <p3>Data Structures | Algorithms | Database Management System | Operating System | Computer Networks | Object-Oriented Programming | Software Engineering | Automata Theory</p3> <br><br>
 
         <p3><b>- Mathematics: </b></p3>
-        <p3>Calculus | Linear Algebra | Statistics | Probability | Differential Equations | Discrete Maths</p3></br>
+        <p3>Calculus | Linear Algebra | Statistics | Probability | Differential Equations | Discrete Maths</p3><br>
 
         <div class="separator"></div>
 
@@ -202,13 +331,19 @@
             <p2><b>About</b></p2> 
         </div>
 
-        <p3>Hello !! I'm Aditya, an Aspiring ML Engineer with a keen interest in understanding how technology works and how it can automate processes to solve problems, making our lives easier. My journey into technology began with a fascination for how computers function and their potential to create impactful solutions.</p3> </br></br>
+        <p3>Hey everyone! I'm Aditya. Even as a kid, I was completely fascinated by touch screen phones. I remember driving my parents crazy, throwing these mini-tantrums, 'Tell me how it works! I won't eat until I know!' I just had to understand how it all came together.</p3> <br><br>
+            
+        <p3>Later, watching superhero movies, especially seeing AI like Jarvis in Iron Man, really sparked my imagination. I started thinking, 'Wow, how does that work?' I wanted to know how to build something like that, you know, AI that could do anything. I guess I've always been fascinated by how tech can automate things and solve problems, especially those everyday ones that just make life a bit harder. I wanted to know how to build that magic.</p3> <br><br>
 
-        <p3> With a strong foundation in Python, Java and Swift, I have explored diverse areas of technology, including Machine Learning, Computer Vision, Generative AI, iOS Development and Cloud Computing. I enjoy working with tools like SwiftUI, Xcode, and AWS, leveraging them to deploy scalable systems, host live applications, and push the boundaries of innovation.</p3> </br></br>
+        <p3>I'm pretty good with Python, Java, and Swift. This means I can jump between different tech stuff. I'm into Machine Learning, Computer Vision, and AI. Plus, I do iOS development and little bit of cloud stuff.</p3> <br><br>
 
-        <p3>Currently pursuing a B.Tech in Computer Science Engineering, I am eager to take my skills further and contribute to the tech industry with innovative ideas. I aspire to secure a Summer Internship in 2025 to enhance my expertise and gain hands-on experience.</p3> </br></br> 
+        <p3>I'm still in college, doing my B.Tech in Computer Science. But, like, I'm really keen to get into the tech market and, you know, actually build stuff for production. I'm super focused on landing a Summer Internship in 2025. I figure that's the best way to get some real-world experience and level up my skills. You know, get my hands dirty with some actual projects, not just textbooks.</p3> <br><br> 
         
-        <p3> When I'm not learning, you'll often find me exploring new advancements in technology, especially in automation and AI, brainstorming creative ideas, or even updating myself with some history and geopolitics.</p3> </br></br>         
+        <p3>Apart from all this I spend my time scrolling youtube watching unboxings, tech reviews, superhero content and some history and geopolitics.</p3> <br><br>         
+
+        <div class="separator"></div>
+
+        <p3><b>Get </b></p3> <a ref="#" onclick="window.open('./assets/resume-example.pdf', '_blank')"><p3><b>Resume.</b></p3></a>
 
         <div class="separator"></div>
 
@@ -218,19 +353,19 @@
                 src="./assets/linkedin2.png"
                 alt="My LinkedIn profile"
                 class="icon2"
-                onclick="location.href='https://linkedin.com/'"
+                onclick="window.open('https://www.linkedin.com/in/crazeformarvel/', '_blank')"
             />
             <img
                 src="./assets/github4.png"
                 alt="My Github profile"
                 class="icon2"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/AdityaKumar1009/', '_blank')"
             />
             <img
                 src="./assets/instagram2.png"
                 alt="My Instagram profile"
                 class="icon2"
-                onclick="location.href='https://instagram.com/'"
+                onclick="window.open('https://www.instagram.com/crazeformarvel/', '_blank')"
             />
             <img
                 src="./assets/mail2.png"
@@ -240,8 +375,9 @@
                 title="Send me an email"
             />          
         </div>
-        <p4>Developed by Aditya with love</p4>
+        <h4>Developed by Aditya with love</h4>
         
     </div>
 </body>
 </html>
+
